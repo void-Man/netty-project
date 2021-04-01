@@ -1,0 +1,19 @@
+// [开始声明]
+syntax = "proto3";
+ //定义protobuf的包名称空间
+package com.cmj.example.netty.protobuf;
+// [结束声明]
+
+// [开始 java 选项配置]
+option java_package = "com.cmj.example.netty.protobuf";
+option java_outer_classname = "StudentProtos";
+// [结束 java 选项配置]
+
+// [开始 消息定义]
+message Student {
+  string id = 1;  // Unique ID number for this person.
+  string name = 2;
+  int32 age = 3;
+}
+
+// [结束 消息定义]
